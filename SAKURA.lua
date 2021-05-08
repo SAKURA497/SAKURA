@@ -1068,7 +1068,7 @@ end
 if text == 'تحديث السورس ⋄' and Devtofy(msg) then 
 os.execute('rm -rf SAKURA.lua')
 os.execute('wget https://raw.githubusercontent.com/SAKURA497/SAKURA/main/SAKURA.lua')
-send(msg.chat_id_, msg.id_,'⋄︙تم تحديث السورس \n⋄︙لديك اخر اصدار لسورس حفره\n⋄︙الاصدار ~ { v 1.6 }')
+send(msg.chat_id_, msg.id_,'⋄︙تم تحديث السورس \n⋄︙لديك اخر اصدار لسورس ساكورا\n⋄︙الاصدار ~ { v 1.6 }')
 dofile('SAKURA.lua')  
 end
 if text == "ضع اسم للبوت ⋄" and Devtofy(msg) then  
@@ -1133,7 +1133,7 @@ end
 if text == "🐉 حصريات و تحديثات ساكورا🐉" and Devtofy(msg) then  
 local updatech =[[
 *يجب عليك الاشتراك في قناة*
-*تحديثات وشروحات سورس حفره*
+*تحديثات وشروحات سورس ساكورا*
 *قم بالضغط في الاسفل ليحولك الئ القناة*
 ]]
 keyboard = {} 
@@ -2367,7 +2367,7 @@ return false
 end
 os.execute('rm -rf SAKURA.lua')
 os.execute('wget https://raw.githubusercontent.com/SAKURA497/SAKURA/main/SAKURA.lua')
-send(msg.chat_id_, msg.id_,'⋄︙تم تحديث السورس \n⋄︙لديك اخر اصدار لسورس حفره\n⋄︙الاصدار ~ { v 1.6 }')
+send(msg.chat_id_, msg.id_,'⋄︙تم تحديث السورس \n⋄︙لديك اخر اصدار لسورس ساكورا\n⋄︙الاصدار ~ { v 1.6 }')
 dofile('SAKURA.lua')  
 end
 
@@ -8811,8 +8811,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'حفره').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'حفره')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'ساكورا').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'ساكورا')
 local SAKURA_Msg = {
 'عمغي كـــول🥺💘',
 'ياروحي كول اني  '..Namebot..'',
@@ -9875,7 +9875,7 @@ end
 end
 ------------------------------------------------------------------------
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'حفره').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'ساكورا').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'*⋄︙تم مغادرة الكروب*') 
@@ -9884,7 +9884,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'حفره')
+Namebot = (database:get(bot_id..'Name:Bot') or 'ساكورا')
 send(msg.chat_id_, msg.id_,'*اسمي القمـيل '..Namebot..'* ') 
 end
 if text == 'الاحصائيات' then
@@ -11267,7 +11267,7 @@ send(msg.chat_id_, msg.id_,(help_text or Text))
 return false
 end
 if text == 'م6' then
-if not Sudo(msg) then
+if not Mod(msg) then
 send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالمطور الاساسي\n⋄︙ارسل {م8} لعرض اوامر الاعضاء')
 return false
 end
@@ -12092,7 +12092,7 @@ return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 database:del(bot_id..'Set:Hzora'..msg.chat_id_)
-Hzora = {'الجرس','عقرب الساعه','السمك','المطر','5','الكتاب','البسمار','7','الكعبه','بيت الشعر','لهانه','انا','امي','الابره','الساعه','22','غلط','كم الساعه','البيتنجان','البيض','المرايه','الضوء','الهواء','الضل','العمر','القلم','المشط','الحفره','البحر','الثلج','الاسفنج','الصوت','بلم'};
+Hzora = {'الجرس','عقرب الساعه','السمك','المطر','5','الكتاب','البسمار','7','الكعبه','بيت الشعر','لهانه','انا','امي','الابره','الساعه','22','غلط','كم الساعه','البيتنجان','البيض','المرايه','الضوء','الهواء','الضل','العمر','القلم','المشط','الساكورا','البحر','الثلج','الاسفنج','الصوت','بلم'};
 name = Hzora[math.random(#Hzora)]
 database:set(bot_id..'Klam:Hzor'..msg.chat_id_,name)
 name = string.gsub(name,'الجرس','شيئ اذا لمسته صرخ ما هوه ؟')
@@ -12122,7 +12122,7 @@ name = string.gsub(name,'الضل','ما هو الشيئ الذي يلاحقك �
 name = string.gsub(name,'العمر','ما هو الشيء الذي كلما طال قصر ؟ ')
 name = string.gsub(name,'القلم','ما هو الشيئ الذي يكتب ولا يقرأ ؟')
 name = string.gsub(name,'المشط','له أسنان ولا يعض ما هو ؟ ')
-name = string.gsub(name,'الحفره','ما هو الشيئ اذا أخذنا منه ازداد وكبر ؟')
+name = string.gsub(name,'الساكورا','ما هو الشيئ اذا أخذنا منه ازداد وكبر ؟')
 name = string.gsub(name,'البحر','ما هو الشيئ الذي يرفع اثقال ولا يقدر يرفع مسمار ؟')
 name = string.gsub(name,'الثلج','انا ابن الماء فان تركوني في الماء مت فمن انا ؟')
 name = string.gsub(name,'الاسفنج','كلي ثقوب ومع ذالك احفض الماء فمن اكون ؟')
@@ -12723,7 +12723,7 @@ send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
 
-if text == "@FEEEM" then
+if text == "@MMLMMM" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"مطوري القميل 💕","مطور السورس هاذ حبي 🙁" }
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
@@ -12751,7 +12751,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, ' ⋄︙تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'حفره')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'ساكورا')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
