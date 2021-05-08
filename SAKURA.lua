@@ -861,7 +861,7 @@ end
 if DevSAKURAW(msg) then
 local bl = ' *⋄︙اهلا عزيزي آلمـطـور*\n*⋄︙آنت آلمـطـور آلآسـآسـي للبوت*\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n*⋄︙تسـتطـيع‌‏ آلتحگم باوامر البوت*\n*⋄︙من خلاال الكيبورت خاص بك*\n*⋄︙قناة سورس البوت *[اضغط هنا](t.me/sakurav15)'
 local keyboard = {
-{'الاحصائيات ⋄','قناه تحديثات البوت ⋄'},
+{'الاحصائيات ⋄'},
 {'تعطيل التواصل ⋄','تفعيل التواصل ⋄'},
 {'ضع اسم للبوت ⋄','المطورين ⋄','قائمه العام ⋄'},
 {'الثانويين ⋄','مسح الثانويين ⋄'},
@@ -878,7 +878,7 @@ local keyboard = {
 {'تفعيل النسخه التلقائيه ⋄','تعطيل النسخه التلقائيه ⋄'},
 {'تغيير المطور الاساسي ⋄'}, 
 {'جلب نسخه الاحتياطيه ⋄'},
-{'تحديث السورس ⋄','الاصدار ⋄'},
+{'تحديث السورس ⋄'},
 {'معلومات السيرفر ⋄'},
 {'الغاء ⋄'},
 }
@@ -1081,14 +1081,6 @@ os.execute('rm -rf SAKURA.lua')
 os.execute('wget https://raw.githubusercontent.com/SAKURA497/SAKURA/main/SAKURA.lua')
 send(msg.chat_id_, msg.id_,' *⋄︙تم تحديث السورس* \n*⋄︙لديك اخر اصدار لسورس ساكورا*\n*⋄︙الاصدار » { 2.8v}*')
 dofile('SAKURA.lua')  
-end
-if text == 'الاصدار ⋄' and DevSAKURAW(msg) then 
-database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' *⋄︙اصدار سورس ساكورا* \n*⋄︙الاصدار »{ 2.8v}*')
-end
-if text == 'قناه تحديثات البوت ⋄' and DevSAKURAW(msg) then 
-database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ⋄︙[تحديثات البوت](t.me/SAKURATEAM) \n⋄︙[قناه السورس](t.me/sakurav15)')
 end
 if text == "ضع اسم للبوت ⋄" and DevSAKURAW(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
