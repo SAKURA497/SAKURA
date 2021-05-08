@@ -2649,7 +2649,7 @@ return false
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
-if text == 'رفع نسخه الاحتياطيه' and DevSAKURAW(msg) then   
+if text == 'رفع النسخه' and DevSAKURAW(msg) then   
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -2670,7 +2670,7 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil)
 end
 end
-if text == 'جلب نسخه الاحتياطيه' and DevSAKURAW(msg) then 
+if text == 'جلب النسخه' and DevSAKURAW(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -11220,8 +11220,8 @@ Text = [[
 ⋄︙اذاعه بالتوجيه خاص
 ⋄︙اذاعه بالتثبيت
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-⋄︙جلب نسخه البوت
-⋄︙رفع نسخه البوت
+⋄︙جلب النسخه 
+⋄︙رفع النسخه
 ⋄︙ضع عدد الاعضاء + العدد
 ⋄︙ضع كليشه المطور
 ⋄︙تفعيل/تعطيل الاذاعه
