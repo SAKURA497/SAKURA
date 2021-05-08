@@ -10959,7 +10959,7 @@ return false
 end
 if text == 'م1' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه\n⋄︙ارسل {م8} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -11016,7 +11016,7 @@ return false
 end
 if text == 'م2' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه\n⋄︙ارسل {م8} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -11075,7 +11075,7 @@ return false
 end
  if text == 'م3' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه\n⋄︙ارسل {م8} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -11139,7 +11139,7 @@ return false
 end
 if text == 'م4' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه\n⋄︙ارسل {م8} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -11194,7 +11194,7 @@ return false
 end
 if text == 'م5' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه\n⋄︙ارسل {م8} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -11268,7 +11268,7 @@ return false
 end
 if text == 'م6' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالمطور الاساسي\n⋄︙ارسل {م8} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالمطور الاساسي')
 return false
 end
 if AddChannel(msg.sender_user_id_) == false then
@@ -11331,7 +11331,7 @@ return false
 end
  if text == 'م7' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه\n⋄︙ارسل {م8} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
@@ -11410,7 +11410,7 @@ return false
 end
  if text == 'م8' then
 if not Mod(msg) then
-send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه\n⋄︙ارسل {م8} لعرض اوامر الاعضاء')
+send(msg.chat_id_, msg.id_,'⋄︙هاذا الامر خاص بالادمنيه')
 return false
 end
 print(AddChannel(msg.sender_user_id_))
