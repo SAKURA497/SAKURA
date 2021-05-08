@@ -9847,19 +9847,6 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 return false
 end
-if text and text:match("^كشف (%d+)$") then
-local userid = text:match("^كشف (%d+)$") 
-if userid then
-tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
-local UserName = ("@"..data.username_ or "لا يوجد")
-local id = userid
-local rtp = Rutba(id,msg.chat_id_)
-texts ='*⋄︙الايدي » ('..id..')*\n*⋄︙المعرف » (*['..UserName..'])\n*⋄︙الرتبه » ('..rtp..')*\n*⋄︙نوع الكشف » بالايدي*'
-send(msg.chat_id_, msg.id_, texts)
-end,nil)
-return false
-end
-end  
 if text==('عدد الكروب') and Mod(msg) then  
 if msg.can_be_deleted_ == false then 
 send(msg.chat_id_,msg.id_," *⋄︙البوت ليس ادمن* \n") 
