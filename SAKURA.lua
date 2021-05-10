@@ -11369,14 +11369,14 @@ database:set(bot_id.."AutoFile:Time",os.date("%x"))
 end
 end
 if text == "غنيلي" and not database:get(bot_id.."sing:for:me"..msg.chat_id_) then
-data,res = https.request('https://vvvzvv.ml/amirVois/SAKURA.php')
+data,res = https.request('https://black-source.tk/BlackTeAM/audios.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
 local Text ='*⋄︙تم اختيار المقطع الصوتي لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘚𝘢𝘒𝘶𝘙𝘢 𝘴𝘰𝘳𝘶𝘤𝘦.',url="t.me/sakurav15"}},
+{{text = '🖨┇𝘴𝘰𝘳𝘶𝘤𝘦 𝘚𝘢𝘒𝘶𝘙𝘢',url="t.me/sakurav15"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
