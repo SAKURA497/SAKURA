@@ -9898,6 +9898,24 @@ Text = '\n *⋄︙بالتاكيد تم تعطيل امر منو ضافني*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
+if text == 'تعطيل الالعاب' and Manager(msg) then   
+if database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
+database:del(bot_id..'Lock:Games'..msg.chat_id_) 
+Text = '\n*⋄︙تم تعطيل الالعاب*' 
+else
+Text = '\n*⋄︙بالتاكيد تم تعطيل الالعاب*'
+end
+send(msg.chat_id_, msg.id_,Text) 
+end
+if text == 'تفعيل الالعاب' and Manager(msg) then  
+if not database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
+database:set(bot_id..'Lock:Games'..msg.chat_id_,true) 
+Text = '\n*⋄︙تم تفعيل الالعاب*' 
+else
+Text = '\n*⋄︙بالتاكيد تم تفعيل الالعاب*'
+end
+send(msg.chat_id_, msg.id_,Text) 
+end
 if text == 'تفعيل الردود' and Manager(msg) then  
 if database:get(bot_id..'lock:add'..msg.chat_id_) then
 Text = '*⋄︙تم تفعيل الردود* '
